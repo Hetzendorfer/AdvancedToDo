@@ -2,12 +2,12 @@
 
 class Database{
     
-    public static $host = "localhost";
-    public static $database = "avancedtodo";
-    public static $username = "root";
-    public static $password = "";
-    public $charset = "utf8mb4";
-    private $conn;
+    private $host = "localhost";
+    private $db_name = "atd";
+    private $username = "root";
+    private $password = "";
+    private $charset = "utf8mb4";
+    public $conn;
     
     public function getConnection() {
         $this->conn = null;

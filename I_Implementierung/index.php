@@ -11,9 +11,8 @@ function __autoload($classname){
 
 Config::getUrl();
 
-include_once './Routes.php';
 
-Database::$database;
+include_once './Routes.php';
 
 if(isset(Route::$routes[$_GET["url"]]))
     Route::$routes[$_GET["url"]]->__invoke();
